@@ -24,3 +24,8 @@ The script will complete and results can be viewed formatted in tabular form wit
 
 ![alt text](https://github.com/warren2i/Amortization/blob/master/chart1.png?raw=true)
 ![alt text](https://github.com/warren2i/Amortization/blob/master/chart2.png?raw=true)
+
+
+Todo
+
+Data validation on user input
