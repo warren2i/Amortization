@@ -7,11 +7,36 @@ totalinterest=0
 totalpayment=0
 
 print("how much do you wish to borrow?")
-loanammount=int(input())
+while True:
+    try:
+        loanammount=int(input())
+    except ValueError:
+        print('data is not int')
+        #better try again... Return to the start of the loop
+        continue
+    else:
+        break
 print("What is the interest rate, in decimal form?")
-interest=float(input())
+while True:
+    try:
+        interest=float(input())
+    except ValueError:
+        print('data is not float')
+        #better try again... Return to the start of the loop
+        continue
+    else:
+        break
 print("What is the length of the term in months?")
-months=int(input())
+
+while True:
+    try:
+        months=int(input())
+    except ValueError:
+        print('data is not int')
+        #better try again... Return to the start of the loop
+        continue
+    else:
+        break
 
 def amortization(loanammount, interest, months):
     xd = loanammount * (((interest / 12) * ((interest / 12 + 1) / months)) / ((interest / 12 + 1) / months) - 1)
